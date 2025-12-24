@@ -35,7 +35,7 @@ export default function Services() {
   return (
     <div className="min-h-[700px] !py-20 ">
       <ResponsiveContainer>
-        <div className=" h-[70vh] !space-y-5">
+        <div className=" h-[70vh] !space-y-5 !w-full">
           <div className="flex justify-between  w-full ">
             <div className=" text-center md:text-left">
               <h1 className="text-primary uppercase font-semibold">Services</h1>
