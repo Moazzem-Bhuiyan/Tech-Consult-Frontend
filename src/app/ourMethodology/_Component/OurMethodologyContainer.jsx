@@ -2,6 +2,7 @@ import Animatetext from '@/component/AnimatedText/AnimatedText';
 import ResponsiveContainer from '@/component/ResponsiveContainer/ResponsiveContainer';
 import { Database } from 'lucide-react';
 import IndustryExpertise from './IndustryExpertise';
+import MethodologyPage from './AdditionalInfoAboutmethodology';
 
 const phases = [
   {
@@ -32,7 +33,7 @@ const phases = [
 
 function PhaseCard({ number, title, description }) {
   return (
-    <div className="flex flex-col items-center gap-4 text-center !p-10 hover:bg-primary/25 hover:scale-105 transform transition duration-500 ">
+    <div className="flex flex-col items-center gap-4 text-center !p-10 hover:bg-primary/25 hover:scale-105 transform transition duration-500 rounded-3xl">
       <div className="flex items-center justify-center w-10 h-10 rounded bg-cyan-400">
         <Database className="w-5 h-5 text-white" />
       </div>
@@ -76,6 +77,7 @@ export default function OurMethodology() {
                 <PhaseCard key={phase.number} {...phase} />
               ))}
             </div>
+            <MethodologyPage />
           </div>
         </section>
       </ResponsiveContainer>

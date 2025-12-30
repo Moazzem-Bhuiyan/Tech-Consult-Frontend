@@ -28,9 +28,8 @@ function page() {
               <h3 className="  text-center md:text-lg text-sm text-gray-700 ">
                 We are a specialized database consulting firm dedicated to helping organizations
                 modernize their data infrastructure through strategic cloud migrations and
-                performance optimization. With deep expertise in both traditional on-premises
-                database platforms and cutting-edge cloud-native solutions, we guide businesses
-                through the complexities of migrating their databases to the cloud.
+                performance optimization. We provide professional database solutions you can trust,
+                delivered by expert architects committed to excellence.
               </h3>
             </Animatetext>
           </div>

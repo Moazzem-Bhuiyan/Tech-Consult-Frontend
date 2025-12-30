@@ -5,7 +5,7 @@ import logo from '@/assets/Logo/logo.png';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 
 // Links
 const LINKS = [
@@ -39,7 +39,7 @@ const LINKS = [
 export default function Navbar() {
   const currentPathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const router = useRouter();
   const blackBackground = [
     '/about',
     '/service',

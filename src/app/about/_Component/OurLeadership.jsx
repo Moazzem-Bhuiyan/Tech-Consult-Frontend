@@ -33,7 +33,7 @@ export default function OurLeadership() {
             {/* Middle Column - Two Stacked Cards */}
             <div className="flex flex-col gap-4">
               {/* Key Qualifications Card */}
-              <div className="flex flex-col gap-3 rounded-2xl bg-[#1a1a1a]   hover:bg-gradient-to-r from-[#156A7E] to-[#26C0E4] transform ease-linear duration-300 hover:scale-95   !p-6 text-white">
+              {/* <div className="flex flex-col gap-3 rounded-2xl bg-[#1a1a1a]   hover:bg-gradient-to-r from-[#156A7E] to-[#26C0E4] transform ease-linear duration-300 hover:scale-95   !p-6 text-white">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-[#156A7E] to-[#26C0E4] ">
                   <Zap className="h-5 w-5 text-white" fill="white" />
                 </div>
@@ -47,7 +47,7 @@ export default function OurLeadership() {
                   <li>Oracle Certified Associate (OCA)</li>
                   <li>Extensive experience with 100TB+ enterprise environments</li>
                 </ul>
-              </div>
+              </div> */}
 
               {/* Service Process Card */}
               <div className="flex flex-col gap-3 rounded-2xl bg-gradient-to-r from-[#156A7E] to-[#26C0E4]  hover:bg-black transform ease-linear duration-300 hover:scale-95   !p-6 text-white">
@@ -60,10 +60,12 @@ export default function OurLeadership() {
                 </Animatetext>
                 <Animatetext x={20} duration={1}>
                   <p className="text-sm leading-relaxed">
-                    We are rapidly expanding our team of database specialists and cloud architects
-                    to serve growing market demand. Our goal is to become the premier database
-                    consulting firm for enterprise cloud migrations, with specialized practices
-                    across industry verticals and emerging technologies
+                    We lead with the core principles of integrity, expertise, and a commitment to
+                    our clients' success. Our leadership is dedicated to fostering a culture of
+                    technical excellence and transparent communication, ensuring that every
+                    engagement is guided by a partnership mentality. We empower our teams to deliver
+                    robust, secure, and future-ready data solutions that provide measurable value to
+                    our clients.
                   </p>
                 </Animatetext>
               </div>

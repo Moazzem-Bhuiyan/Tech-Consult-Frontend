@@ -37,7 +37,9 @@ export default function ServiceCard({ service, featured = false }) {
             </Animatetext>
             <Animatetext x={20} duration={1}>
               {' '}
-              <p className="text-neutral-300 text-sm leading-relaxed">{service.description}</p>
+              <p className="text-neutral-300 text-sm leading-relaxed">
+                {service.description?.split(' ').slice(0, 50).join(' ') + '...'}
+              </p>
             </Animatetext>
 
             <button
@@ -77,7 +79,9 @@ export default function ServiceCard({ service, featured = false }) {
           </Animatetext>
           <Animatetext x={20} duration={1}>
             {' '}
-            <p className="text-neutral-300 text-sm leading-relaxed">{service.description}</p>
+            <p className="text-neutral-300 text-sm leading-relaxed">
+              {service.description?.split(' ').slice(0, 20).join(' ') + '...'}
+            </p>
           </Animatetext>
 
           <div className="flex items-center justify-between">
@@ -91,9 +95,7 @@ export default function ServiceCard({ service, featured = false }) {
 
             <h1 className="text-2xl font-semibold">
               <span className="text-[#ffffff]">$</span>{' '}
-              <span className="text-white">
-                {service.initialPrice} - $ {service.finalPrice}
-              </span>
+              <span className="text-white">{service.initialPrice}</span>
             </h1>
           </div>
         </div>

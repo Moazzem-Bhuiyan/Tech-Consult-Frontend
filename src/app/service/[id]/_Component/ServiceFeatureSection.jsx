@@ -36,26 +36,33 @@ export default function FeatureSection({ initialService }) {
             </div>
 
             {/* Service Process Card */}
-            <div className="flex flex-col gap-3 rounded-2xl bg-gradient-to-r from-[#156A7E] to-[#26C0E4] hover:bg-black transform ease-linear duration-300 hover:scale-105   !p-6 text-white">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white">
-                <Settings className="h-5 w-5 text-[#156A7E]" />
+            <div className="flex flex-col !gap-4 rounded-2xl bg-gradient-to-r from-[#156A7E] to-[#26C0E4] transform transition duration-300 hover:scale-105 !p-6 text-white">
+              {/* Icon */}
+              <div className="flex !h-10 !w-10 items-center justify-center rounded-full bg-white">
+                <Settings className="!h-5 !w-5 text-[#156A7E]" />
               </div>
+
+              {/* Title */}
               <Animatetext x={-20} duration={1}>
-                {' '}
-                <h3 className="text-xl font-semibold">Starting Price</h3>
+                <h3 className="text-xl font-semibold">Service Pricing</h3>
               </Animatetext>
 
-              {/* Price Range */}
+              {/* Starting Price */}
               <p className="text-lg font-semibold">
-                ${initialService?.initialPrice || 'N/A'} - ${initialService?.finalPrice || 'N/A'}
+                Starting from ${initialService?.initialPrice || 'N/A'}
+              </p>
+
+              {/* Hourly Rate */}
+              <p className="text-sm font-medium opacity-90">
+                + $ {initialService?.hourlyRate || 'N/A'} / hour
               </p>
 
               {/* Description */}
               <Animatetext x={20} duration={1}>
-                <p className="text-sm leading-relaxed">
-                  Prices vary based on service complexity, selected options, or AWS services. You
-                  can book this service at the starting price of $
-                  {initialService?.initialPrice || 'N/A'}.
+                <p className="text-sm leading-relaxed opacity-90">
+                  Each service starts at a fixed base price. Final cost depends on project
+                  complexity and total hours required. There is no upper limit for complex or
+                  long-term projects.
                 </p>
               </Animatetext>
             </div>

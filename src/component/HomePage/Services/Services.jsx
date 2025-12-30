@@ -5,18 +5,13 @@ import ResponsiveContainer from '@/component/ResponsiveContainer/ResponsiveConta
 import { EmptyOutline } from '@/component/shared/Emty/Emty';
 import { SkeletonCarCard } from '@/component/shared/SkeletonCard/SkeletonCard';
 import useGetAllService from '@/Hooks/UsegetAllService';
-import { ArrowRight, Grid3x3, Home, Wrench } from 'lucide-react';
+import { ArrowRight, Home } from 'lucide-react';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 export default function Services() {
   const router = useRouter();
-  const {
-    services: allServices,
-    totalPages,
-    loading,
-    error,
-  } = useGetAllService({
+  const { services: allServices, loading } = useGetAllService({
     limit: 3,
     page: 1,
   });
@@ -101,7 +96,9 @@ export default function Services() {
                         <h3 className="text-white text-2xl font-bold mb-3">{service?.title}</h3>
                       </Animatetext>
                       <Animatetext x={20} duration={1}>
-                        <p className="text-gray-300 text-sm mb-6">{service?.description}</p>
+                        <p className="text-neutral-300 text-sm leading-relaxed">
+                          {service.description?.split(' ').slice(0, 20).join(' ') + '...'}
+                        </p>
                       </Animatetext>
 
                       <hr />

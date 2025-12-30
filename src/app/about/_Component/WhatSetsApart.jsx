@@ -1,4 +1,6 @@
 import ResponsiveContainer from '@/component/ResponsiveContainer/ResponsiveContainer';
+import Image from 'next/image';
+import techthree from '@/assets/images/tech-three.jpg';
 
 export default function WhatSetsUsApart() {
   return (
@@ -8,8 +10,10 @@ export default function WhatSetsUsApart() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Image Column */}
             <div className="flex justify-center md:justify-start">
-              <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-NLXNJimaOqW9iSSyGl07GBEMAqTJG5.png"
+              <Image
+                width={500}
+                height={500}
+                src={techthree}
                 alt="Team collaborating in a data center"
                 className="w-full max-w-md rounded-2xl shadow-lg object-cover"
               />

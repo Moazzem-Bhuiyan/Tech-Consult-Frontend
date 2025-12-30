@@ -23,13 +23,13 @@ function Hero() {
       {/* text */}
       <div className="absolute lg:!top-1/2  !top-1/3  md:left-[700px] left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
         <Animatetext x={30} duration={2}>
-          <h1 className="font-bold md:text-7xl text-6xl text-white uppercase">
-            Transform Your Database{' '}
+          <h1 className="font-bold md:text-[42px] text-4xl text-white uppercase">
+            Professional database solutions you can trust. Expertly managed, securely optimized, and
           </h1>
         </Animatetext>
         <Animatetext x={-30} duration={2}>
-          <h1 className="font-bold  md:text-7xl text-3xl text-white uppercase">
-            Infrastructure with Expert Cloud Migration{' '}
+          <h1 className="font-bold  md:text-4xl text-3xl text-white uppercase">
+            committed to excellence.{' '}
           </h1>
         </Animatetext>
         <Animatetext y={-30} duration={2}>

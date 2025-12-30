@@ -15,6 +15,7 @@ export default function AllServices() {
     page: currentPage,
   });
   const featuredService = services?.[0];
+  const regularServices = services.slice(1) || [];
   if (loading) {
     return (
       <div>
@@ -46,12 +47,10 @@ export default function AllServices() {
 
       {/* Regular Services Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 !gap-10">
-        {services.map((service) => (
+        {regularServices?.map((service) => (
           <ServiceCard key={service.id} service={service} />
         ))}
       </div>
-
-      {/* Pagination */}
       {/* Pagination */}
       <div className="flex items-center justify-center !gap-4 !pt-4">
         <button

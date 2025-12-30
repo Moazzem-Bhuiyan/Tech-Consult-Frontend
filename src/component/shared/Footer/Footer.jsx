@@ -4,42 +4,32 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Twitter, Facebook, Instagram, Send } from 'lucide-react';
+import logo from '@/assets/Logo/logo.png';
+import Image from 'next/image';
 
 export function Footer() {
   return (
     <footer className="bg-black text-white ">
       <div className="w-[90%] !mx-auto !px-6 !py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 ">
           {/* Company Info */}
           <div className="!space-y-6">
             <div className="flex items-center gap-2">
               <div className="relative h-12 w-12">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <svg
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-full w-full"
-                  >
-                    <path
-                      d="M20 5L15 20H25L20 35L30 15H20L25 5H20Z"
-                      fill="#FF6B35"
-                      stroke="#FF6B35"
-                      strokeWidth="1"
-                    />
-                  </svg>
+                  <Image src={logo} alt="logo" className="h-12 w-12" />
                 </div>
               </div>
               <div>
                 <div className="text-xl font-bold">
-                  <span className="text-[#4A9FD8]">PEC</span>
+                  <span className="text-[#4A9FD8]">PL</span>
                 </div>
-                <div className="text-xs uppercase tracking-wider text-gray-400">ELECTRICAL</div>
+                <div className="text-xs uppercase tracking-wider text-gray-400">Tech</div>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-gray-300">
-              Professional electrical services you can trust. Licensed, insured, and committed to
-              excellence.
+              PL Tech is your trusted partner for all database services, delivering quality and
+              reliability.
             </p>
             <div className="flex gap-3">
               <Button
@@ -100,19 +90,19 @@ export function Footer() {
                   Services
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/gallery"
                   className="text-sm text-gray-300 transition-colors hover:text-[#FF6B35]"
                 >
                   Gallery
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h3 className="!mb-6 text-lg font-semibold">Services</h3>
             <ul className="!space-y-3">
               <li>
@@ -148,7 +138,7 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* Subscribe */}
           <div>
@@ -175,7 +165,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="!mt-12 border-t border-gray-800 !pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 md:flex-row">
-            <p>Copyright © 2025 PEC ELECTRICAL</p>
+            <p>Copyright © 2025 PL TECH</p>
             <div className="flex gap-6">
               <Link href="/terms" className="transition-colors hover:text-white">
                 Term of use

@@ -21,11 +21,11 @@ export function ContactInfo() {
       <div className="space-y-6">
         <div className="!mb-2">
           <h3 className="!mb-1 font-semibold">Email</h3>
-          <p className="text-foreground">info@company.com</p>
+          <p className="text-foreground"> info@pltechconsulting.com</p>
           <p className="text-sm text-muted-foreground">We'll respond within 24 hours</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           <div>
             <h3 className="!mb-1 font-semibold">Phone</h3>
             <p className="text-foreground">(555) 123-4567</p>
@@ -37,7 +37,7 @@ export function ContactInfo() {
             <p className="text-foreground">123 Electric Avenue</p>
             <p className="text-sm text-muted-foreground">Springfield, ST 12345</p>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="flex gap-4">

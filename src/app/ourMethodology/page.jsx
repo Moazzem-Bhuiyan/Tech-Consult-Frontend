@@ -14,6 +14,7 @@ export default function page() {
   return (
     <div>
       <OurMethodology />
+
       <div className='bg-[url("/images/sectionBg.png")] bg-no-repeat bg-cover'>
         {/*========================== IndustryExpertise========================= */}
         <ResponsiveContainer>
