@@ -13,8 +13,8 @@ export default function OurLeadership() {
           </Animatetext>
           <Animatetext>
             <h1 className=" text-center">
-              Expert electrical wiring services for residential buildings to ensure safety,
-              efficiency, and compliance with all electrical codes.
+              Our leadership team is made up of experienced professionals who bring a wealth of
+              knowledge and expertise to the table.
             </h1>
           </Animatetext>
         </div>
