@@ -84,7 +84,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href="/service"
                   className="text-sm text-gray-300 transition-colors hover:text-[#FF6B35]"
                 >
                   Services
@@ -166,14 +166,14 @@ export function Footer() {
         <div className="!mt-12 border-t border-gray-800 !pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-gray-400 md:flex-row">
             <p>Copyright © 2025 PL TECH</p>
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <Link href="/terms" className="transition-colors hover:text-white">
                 Term of use
               </Link>
               <Link href="/privacy" className="transition-colors hover:text-white">
                 Privacy Policy
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

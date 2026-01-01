@@ -14,20 +14,8 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email Address',
-      value: 'info@company.com',
-      href: 'mailto:info@company.com',
-    },
-    {
-      icon: Phone,
-      label: 'Phone Number',
-      value: '(555) 123-4567',
-      href: 'tel:+15551234567',
-    },
-    {
-      icon: MapPin,
-      label: 'Our Location',
-      value: '123 Electric Avenue, ST 12345',
-      href: 'https://maps.google.com/?q=123+Electric+Avenue+ST+12345',
+      value: 'info@pltechconsulting.com',
+      href: 'mailto:info@pltechconsulting.com',
     },
   ];
   return (
@@ -36,7 +24,7 @@ export default function Contact() {
         <ContactContainer />
 
         <div className="w-full md:max-w-5xl !mt-10 md:!mt-0">
-          <div className="grid grid-cols-1 md:grid-cols-3 !gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 !gap-6">
             {contactInfo.map((item, index) => {
               const Icon = item.icon;
               return (
