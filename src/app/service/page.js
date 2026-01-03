@@ -25,8 +25,9 @@ function page() {
             </Animatetext>
             <Animatetext x={-20} duration={1}>
               <h3 className="  md:text-center text-sm md:text-lg text-gray-700 ">
-                Providing top-notch electrical solutions for homes and businesses with professional
-                expertise and reliable service.
+                We offer a wide range of services to meet your needs in the digital field. Our team
+                of skilled professionals is dedicated to delivering high-quality services that meet
+                your specific needs.
               </h3>
             </Animatetext>
           </div>
