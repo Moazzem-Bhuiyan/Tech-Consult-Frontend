@@ -5,7 +5,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function Hero() {
   return (
-    <div className=" relative min-h-[100vh] w-full bg-cover bg-center bg-no-repeat !bg-[url('/images/heroBanner.png')]">
+    <div className=" relative min-h-[100vh] w-full bg-cover bg-center bg-no-repeat !bg-[url('@/assets/images/heroBanner.png')] flex items-center justify-center">
       <div className="absolute inset-0 z-0 md:flex hidden items-end justify-center opacity-70">
         <DotLottieReact
           src="https://lottie.host/e6209e35-f8b1-444b-984b-60a13b7c9d0a/2mBnBaTLgd.lottie"

@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import logo from '@/assets/Logo/logo.png';
 
 export default function Loader({ fullScreen = true }) {
   if (fullScreen) {
@@ -16,7 +17,7 @@ export default function Loader({ fullScreen = true }) {
             {/*================= Pulsing logo================= */}
             <div className="relative flex h-32 w-32 items-center justify-center animate-pulse">
               <Image
-                src="/src/assets/Logo/logo.png"
+                src={logo}
                 alt="PFC Electrical"
                 width={100}
                 height={100}
